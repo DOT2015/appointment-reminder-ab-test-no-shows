@@ -18,8 +18,12 @@ LAYOUT = dict(template="plotly_white", font=dict(family="Inter, Segoe UI, Arial"
 PAYER_LABEL = {"commercial": "Commercial", "medicare": "Medicare", "medicaid": "Medicaid", "self_pay": "Self-pay"}
 
 
+_N = [0]
+
+
 def div(fig, first=False):
-    return pio.to_html(fig, include_plotlyjs=True if first else False, full_html=False,
+    _N[0] += 1   # fixed div ids keep the HTML byte-identical between runs
+    return pio.to_html(fig, include_plotlyjs=True if first else False, full_html=False, div_id=f"fig{_N[0]}",
                        config={"displaylogo": False, "responsive": True})
 
 

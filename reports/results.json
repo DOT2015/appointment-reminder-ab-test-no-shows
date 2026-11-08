@@ -1,0 +1,916 @@
+{
+  "srm": {
+    "overall_before": {
+      "control": 15456,
+      "treatment": 15560,
+      "treatment_share": 0.5016765540366263,
+      "chi2": 0.3487232396182615,
+      "p_value": 0.5548367644401444
+    },
+    "clinic_heterogeneity_before": {
+      "chi2": 15.779795371577606,
+      "dof": 23,
+      "p_value": 0.864532025754801
+    },
+    "clinic_week_cells": 432,
+    "flagged_cells": 1,
+    "flagged_detail": [
+      {
+        "clinic_id": "C17",
+        "week": "2025-04-07",
+        "n_control": 51.0,
+        "n_treatment": 0.0,
+        "n": 51.0,
+        "p_value": 8.881784197001252e-16,
+        "q_value": 3.836930773104541e-13,
+        "flagged": true
+      }
+    ],
+    "exclusions": [
+      {
+        "clinic_id": "C17",
+        "date_from": "2025-04-07",
+        "date_to": "2025-04-15",
+        "days": 9,
+        "control_in_window": 82,
+        "treatment_in_window": 0,
+        "unlogged_two_way_patients": 81,
+        "cell_p_value": 4.1359030627651384e-25
+      }
+    ],
+    "overall_after": {
+      "control": 15374,
+      "treatment": 15560,
+      "treatment_share": 0.5030064007241223,
+      "chi2": 1.1183810693735048,
+      "p_value": 0.290267318793477
+    },
+    "clinic_heterogeneity_after": {
+      "chi2": 21.09963220522805,
+      "dof": 23,
+      "p_value": 0.5750030514529215
+    },
+    "unlogged_two_way_patients_total": 90,
+    "min_detectable_drop_overall": 579.5065075987341
+  },
+  "primary_no_show": {
+    "control": 0.1376176304994772,
+    "treatment": 0.11074152198604575,
+    "diff": -0.026876108513431453,
+    "se": 0.0037470159298935326,
+    "ci_low": -0.03422012478552064,
+    "ci_high": -0.01953209224134227,
+    "p_value": 7.35490300138787e-13,
+    "se_iid": 0.0029622405985927245,
+    "relative": -0.19529553310782774,
+    "n": 49518,
+    "n_patients": 29458,
+    "control_pp": 13.76176304994772,
+    "treatment_pp": 11.074152198604576,
+    "diff_pp": -2.687610851343145,
+    "se_pp": 0.37470159298935324,
+    "ci_low_pp": -3.422012478552064,
+    "ci_high_pp": -1.953209224134227,
+    "se_iid_pp": 0.29622405985927247
+  },
+  "primary_sql_check": [
+    {
+      "variant": "control",
+      "patients": 14680,
+      "slot_appointments": 24866,
+      "no_shows": 3422.0,
+      "no_show_rate": 0.1376176304994772
+    },
+    {
+      "variant": "treatment",
+      "patients": 14778,
+      "slot_appointments": 24652,
+      "no_shows": 2730.0,
+      "no_show_rate": 0.11074152198604575
+    }
+  ],
+  "late_cancel": {
+    "control": 0.06213303305718652,
+    "treatment": 0.07674833684893721,
+    "diff": 0.014615303791750677,
+    "se": 0.0022986009776980046,
+    "ci_low": 0.010110128660634031,
+    "ci_high": 0.01912047892286732,
+    "p_value": 2.039357010787837e-10,
+    "se_iid": 0.002283333204843418,
+    "relative": 0.23522598322697238,
+    "n": 49518,
+    "n_patients": 29458,
+    "control_pp": 6.213303305718652,
+    "treatment_pp": 7.674833684893721,
+    "diff_pp": 1.4615303791750678,
+    "se_pp": 0.22986009776980046,
+    "ci_low_pp": 1.0110128660634032,
+    "ci_high_pp": 1.912047892286732,
+    "se_iid_pp": 0.2283333204843418
+  },
+  "refill_of_late_cancels": {
+    "control": 0.24207119741100325,
+    "treatment": 0.5935517970401691,
+    "diff": 0.3514805996291669,
+    "se": 0.015609193697528362,
+    "ci_low": 0.3208871421543017,
+    "ci_high": 0.3820740571040321,
+    "p_value": 2.7947465319230147e-112,
+    "se_iid": 0.015914392635069136,
+    "relative": 1.4519719957942856,
+    "n": 3437,
+    "n_patients": 3251,
+    "control_pp": 24.207119741100325,
+    "treatment_pp": 59.35517970401691,
+    "diff_pp": 35.14805996291669,
+    "se_pp": 1.560919369752836,
+    "ci_low_pp": 32.08871421543017,
+    "ci_high_pp": 38.20740571040321,
+    "se_iid_pp": 1.5914392635069134
+  },
+  "unfilled_slot": {
+    "control": 0.18471004584573314,
+    "treatment": 0.14193574557845207,
+    "diff": -0.04277430026728105,
+    "se": 0.004032818277010095,
+    "ci_low": -0.050678478846415714,
+    "ci_high": -0.03487012168814639,
+    "p_value": 2.7781009608187595e-26,
+    "se_iid": 0.00331768290548582,
+    "relative": -0.2315753865548031,
+    "n": 49518,
+    "n_patients": 29458,
+    "control_pp": 18.471004584573315,
+    "treatment_pp": 14.193574557845206,
+    "diff_pp": -4.277430026728105,
+    "se_pp": 0.4032818277010095,
+    "ci_low_pp": -5.067847884641571,
+    "ci_high_pp": -3.487012168814639,
+    "se_iid_pp": 0.33176829054858203
+  },
+  "delivery": [
+    {
+      "variant": "control",
+      "messages_sent": 22684.0,
+      "messages_per_appointment": 0.8330823754085718,
+      "delivery_rate": 0.9449832481043907,
+      "status_unknown_rate": 0.019881855052019046
+    },
+    {
+      "variant": "treatment",
+      "messages_sent": 44959.0,
+      "messages_per_appointment": 1.6575357616870667,
+      "delivery_rate": 0.9467069997108477,
+      "status_unknown_rate": 0.019173024311038945
+    }
+  ],
+  "cuped_no_show": {
+    "control": 0.1376176304994772,
+    "treatment": 0.11074152198604575,
+    "diff": -0.02615484090153655,
+    "se": 0.00286647554422704,
+    "ci_low": -0.0317730297307864,
+    "ci_high": -0.0205366520722867,
+    "p_value": 7.214134811221588e-20,
+    "se_iid": 0.0025648042751067438,
+    "relative": -0.1900544342073664,
+    "n": 49518,
+    "n_patients": 29458,
+    "control_pp": 13.76176304994772,
+    "treatment_pp": 11.074152198604576,
+    "diff_pp": -2.6154840901536547,
+    "se_pp": 0.286647554422704,
+    "ci_low_pp": -3.17730297307864,
+    "ci_high_pp": -2.05366520722867,
+    "se_iid_pp": 0.2564804275106744,
+    "variance_reduction": 0.4147715872730814
+  },
+  "cuped_unfilled": {
+    "control": 0.18471004584573314,
+    "treatment": 0.14193574557845207,
+    "diff": -0.04204298161828145,
+    "se": 0.0032325503399579163,
+    "ci_low": -0.04837866386281167,
+    "ci_high": -0.03570729937375122,
+    "p_value": 1.1291201900678492e-38,
+    "se_iid": 0.0029694122246261977,
+    "relative": -0.2276161073198751,
+    "n": 49518,
+    "n_patients": 29458,
+    "control_pp": 18.471004584573315,
+    "treatment_pp": 14.193574557845206,
+    "diff_pp": -4.204298161828144,
+    "se_pp": 0.32325503399579164,
+    "ci_low_pp": -4.837866386281167,
+    "ci_high_pp": -3.5707299373751225,
+    "se_iid_pp": 0.2969412224626198,
+    "variance_reduction": 0.357499768884458
+  },
+  "cuped_rho_patient_level": 0.5571053092324462,
+  "cuped_rho_n_patients": 25019,
+  "share_patients_with_pre_period": 0.8493108832914659,
+  "pre_period_balance": {
+    "control_pre_rate": 0.13560483072683482,
+    "treatment_pre_rate": 0.13689205508828703,
+    "diff_pp": 0.1287224361452205
+  },
+  "language_given_payer": [
+    {
+      "term": "Other",
+      "coef_pp": -3.657632972839162,
+      "p_value": 0.02693125549107572
+    },
+    {
+      "term": "Spanish",
+      "coef_pp": -1.3531989811509535,
+      "p_value": 0.13293001703213217
+    }
+  ],
+  "segments": [
+    {
+      "dimension": "payer",
+      "segment": "commercial",
+      "metric": "is_no_show",
+      "control_pp": 9.241594996090697,
+      "treatment_pp": 7.527903110900024,
+      "diff_pp": -1.5453048574803145,
+      "ci_low_pp": -2.200793327514957,
+      "ci_high_pp": -0.8898163874456722,
+      "p_value": 3.826548179078642e-06,
+      "n": 25423
+    },
+    {
+      "dimension": "payer",
+      "segment": "commercial",
+      "metric": "is_unfilled",
+      "control_pp": 13.956215793588742,
+      "treatment_pp": 10.820865985909919,
+      "diff_pp": -2.9673777202091816,
+      "ci_low_pp": -3.755600207265128,
+      "ci_high_pp": -2.1791552331532356,
+      "p_value": 1.6000070050494426e-13,
+      "n": 25423
+    },
+    {
+      "dimension": "payer",
+      "segment": "medicaid",
+      "metric": "is_no_show",
+      "control_pp": 22.980431510286,
+      "treatment_pp": 17.386831275720166,
+      "diff_pp": -5.600532256663976,
+      "ci_low_pp": -7.0184099739896215,
+      "ci_high_pp": -4.18265453933833,
+      "p_value": 9.806489314449227e-15,
+      "n": 11811
+    },
+    {
+      "dimension": "payer",
+      "segment": "medicaid",
+      "metric": "is_unfilled",
+      "control_pp": 27.680214082622513,
+      "treatment_pp": 20.233196159122084,
+      "diff_pp": -7.453574227535857,
+      "ci_low_pp": -8.961333811522524,
+      "ci_high_pp": -5.945814643549191,
+      "p_value": 3.3568165444473524e-22,
+      "n": 11811
+    },
+    {
+      "dimension": "payer",
+      "segment": "medicare",
+      "metric": "is_no_show",
+      "control_pp": 12.225899875879188,
+      "treatment_pp": 10.196634907764038,
+      "diff_pp": -2.148495410102471,
+      "ci_low_pp": -3.398925105468846,
+      "ci_high_pp": -0.898065714736096,
+      "p_value": 0.0007581967590607693,
+      "n": 9767
+    },
+    {
+      "dimension": "payer",
+      "segment": "medicare",
+      "metric": "is_unfilled",
+      "control_pp": 16.67356226727348,
+      "treatment_pp": 13.37928238394486,
+      "diff_pp": -3.4126138933450596,
+      "ci_low_pp": -4.823896071738036,
+      "ci_high_pp": -2.001331714952083,
+      "p_value": 2.1437479959379446e-06,
+      "n": 9767
+    },
+    {
+      "dimension": "payer",
+      "segment": "self_pay",
+      "metric": "is_no_show",
+      "control_pp": 21.773555027711797,
+      "treatment_pp": 20.893141945773525,
+      "diff_pp": -1.1213559595852953,
+      "ci_low_pp": -4.17992953857103,
+      "ci_high_pp": 1.9372176194004394,
+      "p_value": 0.47240226037216926,
+      "n": 2517
+    },
+    {
+      "dimension": "payer",
+      "segment": "self_pay",
+      "metric": "is_unfilled",
+      "control_pp": 27.47426761678543,
+      "treatment_pp": 23.28548644338118,
+      "diff_pp": -4.424804139850273,
+      "ci_low_pp": -7.702569172169496,
+      "ci_high_pp": -1.1470391075310498,
+      "p_value": 0.008148725326557991,
+      "n": 2517
+    },
+    {
+      "dimension": "specialty",
+      "segment": "behavioral_health",
+      "metric": "is_no_show",
+      "control_pp": 13.240891789015768,
+      "treatment_pp": 10.582757160999012,
+      "diff_pp": -2.4171105359199454,
+      "ci_low_pp": -3.400001235434246,
+      "ci_high_pp": -1.4342198364056444,
+      "p_value": 1.4361942070967176e-06,
+      "n": 14443
+    },
+    {
+      "dimension": "specialty",
+      "segment": "behavioral_health",
+      "metric": "is_unfilled",
+      "control_pp": 18.012506797172374,
+      "treatment_pp": 13.842246366586707,
+      "diff_pp": -3.9263265507651046,
+      "ci_low_pp": -5.063170628940496,
+      "ci_high_pp": -2.7894824725897136,
+      "p_value": 1.2954863579262011e-11,
+      "n": 14443
+    },
+    {
+      "dimension": "specialty",
+      "segment": "cardiology",
+      "metric": "is_no_show",
+      "control_pp": 14.57182320441989,
+      "treatment_pp": 11.403508771929824,
+      "diff_pp": -2.1587549263366412,
+      "ci_low_pp": -3.8505281453975235,
+      "ci_high_pp": -0.4669817072757588,
+      "p_value": 0.012385204899611686,
+      "n": 5746
+    },
+    {
+      "dimension": "specialty",
+      "segment": "cardiology",
+      "metric": "is_unfilled",
+      "control_pp": 19.71685082872928,
+      "treatment_pp": 14.701754385964913,
+      "diff_pp": -4.019222040980928,
+      "ci_low_pp": -5.915414901233095,
+      "ci_high_pp": -2.1230291807287593,
+      "p_value": 3.2615211790073596e-05,
+      "n": 5746
+    },
+    {
+      "dimension": "specialty",
+      "segment": "dermatology",
+      "metric": "is_no_show",
+      "control_pp": 13.567438148443737,
+      "treatment_pp": 11.346938775510203,
+      "diff_pp": -2.3806970919136834,
+      "ci_low_pp": -4.177394636081222,
+      "ci_high_pp": -0.5839995477461443,
+      "p_value": 0.009403323315266622,
+      "n": 4956
+    },
+    {
+      "dimension": "specialty",
+      "segment": "dermatology",
+      "metric": "is_unfilled",
+      "control_pp": 18.39584996009577,
+      "treatment_pp": 14.285714285714285,
+      "diff_pp": -4.26454240832299,
+      "ci_low_pp": -6.269367386512016,
+      "ci_high_pp": -2.2597174301339646,
+      "p_value": 3.057822426459356e-05,
+      "n": 4956
+    },
+    {
+      "dimension": "specialty",
+      "segment": "ob_gyn",
+      "metric": "is_no_show",
+      "control_pp": 13.382727483213708,
+      "treatment_pp": 11.085818347370816,
+      "diff_pp": -2.4952879401362433,
+      "ci_low_pp": -3.7797449166050967,
+      "ci_high_pp": -1.21083096366739,
+      "p_value": 0.00014033255367196888,
+      "n": 8712
+    },
+    {
+      "dimension": "specialty",
+      "segment": "ob_gyn",
+      "metric": "is_unfilled",
+      "control_pp": 18.337578143088678,
+      "treatment_pp": 14.045071704985205,
+      "diff_pp": -4.489487126480151,
+      "ci_low_pp": -5.9618340229058955,
+      "ci_high_pp": -3.017140230054407,
+      "p_value": 2.2821842633630997e-09,
+      "n": 8712
+    },
+    {
+      "dimension": "specialty",
+      "segment": "orthopedics",
+      "metric": "is_no_show",
+      "control_pp": 13.264989127058094,
+      "treatment_pp": 11.875189336564677,
+      "diff_pp": -1.32248158719981,
+      "ci_low_pp": -2.850258781559498,
+      "ci_high_pp": 0.20529560715987824,
+      "p_value": 0.08977361091065822,
+      "n": 6520
+    },
+    {
+      "dimension": "specialty",
+      "segment": "orthopedics",
+      "metric": "is_unfilled",
+      "control_pp": 17.33457595526561,
+      "treatment_pp": 14.843986670705847,
+      "diff_pp": -2.426538189127605,
+      "ci_low_pp": -4.119307512499201,
+      "ci_high_pp": -0.7337688657560084,
+      "p_value": 0.004961013811782144,
+      "n": 6520
+    },
+    {
+      "dimension": "specialty",
+      "segment": "primary_care",
+      "metric": "is_no_show",
+      "control_pp": 14.901531728665207,
+      "treatment_pp": 10.894771384817327,
+      "diff_pp": -4.351004817583602,
+      "ci_low_pp": -5.635171307196572,
+      "ci_high_pp": -3.0668383279706317,
+      "p_value": 3.121171795788276e-11,
+      "n": 9141
+    },
+    {
+      "dimension": "specialty",
+      "segment": "primary_care",
+      "metric": "is_unfilled",
+      "control_pp": 19.38730853391685,
+      "treatment_pp": 14.04506672500547,
+      "diff_pp": -5.684505380055551,
+      "ci_low_pp": -7.136066500267223,
+      "ci_high_pp": -4.23294425984388,
+      "p_value": 1.648026106579348e-14,
+      "n": 9141
+    },
+    {
+      "dimension": "lead_time_band",
+      "segment": "0-2 days",
+      "metric": "is_no_show",
+      "control_pp": 14.022248243559718,
+      "treatment_pp": 10.49218980253463,
+      "diff_pp": -3.2224398900026188,
+      "ci_low_pp": -4.5954650146429055,
+      "ci_high_pp": -1.8494147653623318,
+      "p_value": 4.2256398681724026e-06,
+      "n": 6809
+    },
+    {
+      "dimension": "lead_time_band",
+      "segment": "0-2 days",
+      "metric": "is_unfilled",
+      "control_pp": 18.764637002341917,
+      "treatment_pp": 13.4394341290893,
+      "diff_pp": -5.005060543482348,
+      "ci_low_pp": -6.5860064204890465,
+      "ci_high_pp": -3.4241146664756505,
+      "p_value": 5.470367043129243e-10,
+      "n": 6809
+    },
+    {
+      "dimension": "lead_time_band",
+      "segment": "3-7 days",
+      "metric": "is_no_show",
+      "control_pp": 14.150787075393536,
+      "treatment_pp": 11.217346764555232,
+      "diff_pp": -2.7486944049636564,
+      "ci_low_pp": -3.7949230602535593,
+      "ci_high_pp": -1.7024657496737543,
+      "p_value": 2.614646337044857e-07,
+      "n": 11892
+    },
+    {
+      "dimension": "lead_time_band",
+      "segment": "3-7 days",
+      "metric": "is_unfilled",
+      "control_pp": 18.64125932062966,
+      "treatment_pp": 14.290592453474474,
+      "diff_pp": -4.165340141747887,
+      "ci_low_pp": -5.361323454914886,
+      "ci_high_pp": -2.9693568285808882,
+      "p_value": 8.724651247278049e-12,
+      "n": 11892
+    },
+    {
+      "dimension": "lead_time_band",
+      "segment": "31+ days",
+      "metric": "is_no_show",
+      "control_pp": 13.128729752770674,
+      "treatment_pp": 11.071744906997342,
+      "diff_pp": -2.0613908602747215,
+      "ci_low_pp": -3.470392046041938,
+      "ci_high_pp": -0.6523896745075041,
+      "p_value": 0.004137836084679854,
+      "n": 6906
+    },
+    {
+      "dimension": "lead_time_band",
+      "segment": "31+ days",
+      "metric": "is_unfilled",
+      "control_pp": 18.32907075873828,
+      "treatment_pp": 14.46708001180986,
+      "diff_pp": -3.864250233582821,
+      "ci_low_pp": -5.490224413025521,
+      "ci_high_pp": -2.2382760541401208,
+      "p_value": 3.1929282011957583e-06,
+      "n": 6906
+    },
+    {
+      "dimension": "lead_time_band",
+      "segment": "8-30 days",
+      "metric": "is_no_show",
+      "control_pp": 13.653324287652646,
+      "treatment_pp": 11.127021563342318,
+      "diff_pp": -2.544950495704627,
+      "ci_low_pp": -3.3155399197135003,
+      "ci_high_pp": -1.774361071695754,
+      "p_value": 9.608753302800663e-11,
+      "n": 23664
+    },
+    {
+      "dimension": "lead_time_band",
+      "segment": "8-30 days",
+      "metric": "is_unfilled",
+      "control_pp": 18.31750339213026,
+      "treatment_pp": 14.226752021563344,
+      "diff_pp": -4.10740807630487,
+      "ci_low_pp": -4.984515301054466,
+      "ci_high_pp": -3.2303008515552754,
+      "p_value": 4.378639692442172e-20,
+      "n": 23664
+    },
+    {
+      "dimension": "language",
+      "segment": "English",
+      "metric": "is_no_show",
+      "control_pp": 12.962148962148962,
+      "treatment_pp": 10.785176493595385,
+      "diff_pp": -2.118263810566611,
+      "ci_low_pp": -2.7237798816348446,
+      "ci_high_pp": -1.5127477394983768,
+      "p_value": 7.056821352854316e-12,
+      "n": 40929
+    },
+    {
+      "dimension": "language",
+      "segment": "English",
+      "metric": "is_unfilled",
+      "control_pp": 17.66056166056166,
+      "treatment_pp": 13.928815879534564,
+      "diff_pp": -3.6715238894193862,
+      "ci_low_pp": -4.359734328164204,
+      "ci_high_pp": -2.9833134506745687,
+      "p_value": 1.372742015584897e-25,
+      "n": 40929
+    },
+    {
+      "dimension": "language",
+      "segment": "Other",
+      "metric": "is_no_show",
+      "control_pp": 15.973003374578179,
+      "treatment_pp": 11.124121779859484,
+      "diff_pp": -6.364656749990546,
+      "ci_low_pp": -9.563484662699043,
+      "ci_high_pp": -3.16582883728205,
+      "p_value": 9.630837073946311e-05,
+      "n": 1743
+    },
+    {
+      "dimension": "language",
+      "segment": "Other",
+      "metric": "is_unfilled",
+      "control_pp": 21.372328458942633,
+      "treatment_pp": 13.934426229508196,
+      "diff_pp": -9.036572889757874,
+      "ci_low_pp": -12.416374097676307,
+      "ci_high_pp": -5.656771681839439,
+      "p_value": 1.6026817145606927e-07,
+      "n": 1743
+    },
+    {
+      "dimension": "language",
+      "segment": "Spanish",
+      "metric": "is_no_show",
+      "control_pp": 17.875499714448885,
+      "treatment_pp": 12.828947368421053,
+      "diff_pp": -4.574437081175161,
+      "ci_low_pp": -6.223137902143204,
+      "ci_high_pp": -2.9257362602071177,
+      "p_value": 5.3864214420784125e-08,
+      "n": 6846
+    },
+    {
+      "dimension": "language",
+      "segment": "Spanish",
+      "metric": "is_unfilled",
+      "control_pp": 22.472872644203314,
+      "treatment_pp": 15.879186602870812,
+      "diff_pp": -6.1263768128053,
+      "ci_low_pp": -7.941753023747979,
+      "ci_high_pp": -4.311000601862622,
+      "p_value": 3.7326529256369536e-11,
+      "n": 6846
+    }
+  ],
+  "interactions": [
+    {
+      "dimension": "payer",
+      "reference": "commercial",
+      "term": "medicaid",
+      "coef_pp": -4.03542168004541,
+      "se_pp": 0.7982100197772978,
+      "p_value": 4.290647995624399e-07,
+      "joint_p_value": 8.98298554109195e-06,
+      "q_value_bh": 5.577842394311718e-06,
+      "significant_q10": true
+    },
+    {
+      "dimension": "payer",
+      "reference": "commercial",
+      "term": "medicare",
+      "coef_pp": -0.5998627075800838,
+      "se_pp": 0.7205980017018001,
+      "p_value": 0.4051542839832676,
+      "joint_p_value": 8.98298554109195e-06,
+      "q_value_bh": 0.7524293845403541,
+      "significant_q10": false
+    },
+    {
+      "dimension": "payer",
+      "reference": "commercial",
+      "term": "self_pay",
+      "coef_pp": 0.47541811193514527,
+      "se_pp": 1.599272070738014,
+      "p_value": 0.7662591884662078,
+      "joint_p_value": 8.98298554109195e-06,
+      "q_value_bh": 0.9055790409146092,
+      "significant_q10": false
+    },
+    {
+      "dimension": "specialty",
+      "reference": "behavioral_health",
+      "term": "cardiology",
+      "coef_pp": 0.3058340563896669,
+      "se_pp": 0.9969055870253106,
+      "p_value": 0.7590082664734448,
+      "joint_p_value": 0.06191427304715025,
+      "q_value_bh": 0.9055790409146092,
+      "significant_q10": false
+    },
+    {
+      "dimension": "specialty",
+      "reference": "behavioral_health",
+      "term": "dermatology",
+      "coef_pp": 0.03432280342153492,
+      "se_pp": 1.0464329294415378,
+      "p_value": 0.9738342280858943,
+      "joint_p_value": 0.06191427304715025,
+      "q_value_bh": 0.9738342280858943,
+      "significant_q10": false
+    },
+    {
+      "dimension": "specialty",
+      "reference": "behavioral_health",
+      "term": "ob_gyn",
+      "coef_pp": -0.046078880764727985,
+      "se_pp": 0.8246696602659913,
+      "p_value": 0.9554409390747559,
+      "joint_p_value": 0.06191427304715025,
+      "q_value_bh": 0.9738342280858943,
+      "significant_q10": false
+    },
+    {
+      "dimension": "specialty",
+      "reference": "behavioral_health",
+      "term": "orthopedics",
+      "coef_pp": 1.1279397344172488,
+      "se_pp": 0.9250179619723912,
+      "p_value": 0.22270355231507644,
+      "joint_p_value": 0.06191427304715025,
+      "q_value_bh": 0.5790292360191988,
+      "significant_q10": false
+    },
+    {
+      "dimension": "specialty",
+      "reference": "behavioral_health",
+      "term": "primary_care",
+      "coef_pp": -1.9235022443159884,
+      "se_pp": 0.8214793285667491,
+      "p_value": 0.01920590006366113,
+      "joint_p_value": 0.06191427304715025,
+      "q_value_bh": 0.06241917520689867,
+      "significant_q10": true
+    },
+    {
+      "dimension": "lead_time_band",
+      "reference": "8-30 days",
+      "term": "0-2 days",
+      "coef_pp": -0.671025097944981,
+      "se_pp": 0.7782815395633962,
+      "p_value": 0.38858400566575624,
+      "joint_p_value": 0.6917113105611065,
+      "q_value_bh": 0.7524293845403541,
+      "significant_q10": false
+    },
+    {
+      "dimension": "lead_time_band",
+      "reference": "8-30 days",
+      "term": "3-7 days",
+      "coef_pp": -0.2124070111725889,
+      "se_pp": 0.6422634454251535,
+      "p_value": 0.7408587643248006,
+      "joint_p_value": 0.6917113105611065,
+      "q_value_bh": 0.9055790409146092,
+      "significant_q10": false
+    },
+    {
+      "dimension": "lead_time_band",
+      "reference": "8-30 days",
+      "term": "31+ days",
+      "coef_pp": 0.4792069442192729,
+      "se_pp": 0.8001833786489766,
+      "p_value": 0.5492586413097658,
+      "joint_p_value": 0.6917113105611065,
+      "q_value_bh": 0.8925452921283693,
+      "significant_q10": false
+    },
+    {
+      "dimension": "language",
+      "reference": "English",
+      "term": "Other",
+      "coef_pp": -4.2526151500554565,
+      "se_pp": 1.6588973433928331,
+      "p_value": 0.01036169770531572,
+      "joint_p_value": 0.0013678668235232534,
+      "q_value_bh": 0.04490069005636812,
+      "significant_q10": true
+    },
+    {
+      "dimension": "language",
+      "reference": "English",
+      "term": "Spanish",
+      "coef_pp": -2.4462662667112256,
+      "se_pp": 0.8954614440148334,
+      "p_value": 0.006297982415956953,
+      "joint_p_value": 0.0013678668235232534,
+      "q_value_bh": 0.04093688570372019,
+      "significant_q10": true
+    }
+  ],
+  "interactions_significant": [
+    {
+      "dimension": "payer",
+      "term": "medicaid",
+      "coef_pp": -4.03542168004541,
+      "q_value_bh": 5.577842394311718e-06
+    },
+    {
+      "dimension": "specialty",
+      "term": "primary_care",
+      "coef_pp": -1.9235022443159884,
+      "q_value_bh": 0.06241917520689867
+    },
+    {
+      "dimension": "language",
+      "term": "Other",
+      "coef_pp": -4.2526151500554565,
+      "q_value_bh": 0.04490069005636812
+    },
+    {
+      "dimension": "language",
+      "term": "Spanish",
+      "coef_pp": -2.4462662667112256,
+      "q_value_bh": 0.04093688570372019
+    }
+  ],
+  "sizing": [
+    {
+      "scope": "full_network",
+      "annual_slot_appointments": 152505,
+      "annual_scheduled_appointments": 167575,
+      "unfilled_effect_pp_raw_sql": -4.277430026728108,
+      "unfilled_effect_pp": -4.204298161828144,
+      "unfilled_ci_pp": [
+        -4.837866386281167,
+        -3.5707299373751225
+      ],
+      "slots_recovered": 6411.764911696012,
+      "slots_recovered_ci": [
+        5445.54169099393,
+        7377.988132398094
+      ],
+      "gross_value": 1025882.3858713619,
+      "annual_cost": 23526.31104822475,
+      "net_value": 1002356.0748231371,
+      "net_value_ci": [
+        847760.3595108041,
+        1156951.7901354702
+      ],
+      "net_value_no_show_only": 614672.7308219882,
+      "break_even_unfilled_pp": -0.09641614638956407
+    },
+    {
+      "scope": "medicaid_selfpay_only",
+      "annual_slot_appointments": 44462,
+      "annual_scheduled_appointments": 48868,
+      "unfilled_effect_pp_raw_sql": -6.870941242413892,
+      "unfilled_effect_pp": -6.918264351461153,
+      "unfilled_ci_pp": [
+        -8.289254119065983,
+        -5.547274583856324
+      ],
+      "slots_recovered": 3075.9986959466582,
+      "slots_recovered_ci": [
+        2466.4292254741986,
+        3685.5681664191175
+      ],
+      "gross_value": 492159.79135146533,
+      "annual_cost": 19611.5755232263,
+      "net_value": 472548.21582823904,
+      "net_value_ci": [
+        375017.1005526455,
+        570079.3311038325
+      ],
+      "net_value_no_show_only": 322618.0095127106,
+      "break_even_unfilled_pp": -0.2756788876347541
+    }
+  ],
+  "sizing_incremental_full_vs_targeted": 529807.8589948982,
+  "power": {
+    "baseline": 0.134,
+    "mde_pp": 1.5,
+    "alpha": 0.05,
+    "power": 0.8,
+    "n_per_arm_unclustered": 7705.262677165465,
+    "planned_appts_per_patient": 2.6,
+    "planned_icc": 0.15,
+    "design_effect_planned": 1.24,
+    "n_per_arm_clustered": 9554.525719685176,
+    "realized_slot_appts_per_arm": 24759,
+    "realized_appts_per_patient": 1.6809695159209723,
+    "realized_icc": 0.42093137619786364,
+    "design_effect_realized": 1.2866414354854079,
+    "achieved_power_at_mde": 0.993195605495343,
+    "mde_at_80_power_pp": 0.9491769872285996,
+    "realized_size_weighted_cluster": 2.4255018377155784
+  },
+  "data_quality": {
+    "appointments": 420134,
+    "raw_status_codes": 15,
+    "status_corrected": 2691,
+    "booked_after_scheduled": 2154,
+    "assignment_rows": 31233,
+    "assigned_patients": 31016,
+    "conflicting_patients": 217,
+    "messages": 300313,
+    "null_delivery": 5992,
+    "tz_check": [
+      {
+        "timezone": "America/Chicago",
+        "channel": "sms_one_way",
+        "median_hours_corrected": 47.95805555555555,
+        "median_hours_naive": 42.93333333333333
+      },
+      {
+        "timezone": "America/New_York",
+        "channel": "sms_one_way",
+        "median_hours_corrected": 47.958333333333336,
+        "median_hours_naive": 43.93388888888889
+      }
+    ]
+  },
+  "decision_rules": {
+    "srm_passes_after_exclusion": true,
+    "unfilled_ci_below_zero": true,
+    "no_show_ci_below_zero": true,
+    "full_rollout_net_value_lower_ci_positive": true,
+    "targeted_net_value_lower_ci_positive": true,
+    "delivery_rate_above_95pct": false
+  },
+  "decision": "roll out network-wide"
+}

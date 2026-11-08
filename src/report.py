@@ -79,7 +79,7 @@ def build_context(res: dict, truth: dict) -> dict:
         "srm_p_after": f2(srm["overall_after"]["p_value"]),
         "srm_share_after": f"{100 * srm['overall_after']['treatment_share']:.2f}",
         "srm_het_p_before": f"{srm['clinic_heterogeneity_before']['p_value']:.2f}",
-        "srm_cells": f"{srm['clinic_week_cells']:,}", "srm_flagged": str(srm["flagged_cells"]),
+        "srm_cells": f"{srm['clinic_week_cells']:,}", "srm_flagged": str(srm["flagged_cells"]), "srm_flagged_text": f"{srm['flagged_cells']} cell" + ("" if srm["flagged_cells"] == 1 else "s"),
         "srm_min_drop": f"{srm['min_detectable_drop_overall']:,.0f}",
         "srm_clinic": ex["clinic_id"] if ex else "none", "srm_from": ex["date_from"] if ex else "-",
         "srm_to": ex["date_to"] if ex else "-", "srm_days": str(ex["days"]) if ex else "0",

@@ -1,0 +1,124 @@
+{
+  "seed": 42,
+  "parameters": {
+    "payer_mix": {
+      "commercial": 0.5,
+      "medicare": 0.22,
+      "medicaid": 0.23,
+      "self_pay": 0.05
+    },
+    "control_no_show": {
+      "commercial": 0.09,
+      "medicare": 0.12,
+      "medicaid": 0.22,
+      "self_pay": 0.24
+    },
+    "effect_pp": {
+      "commercial": -1.0,
+      "medicare": -1.5,
+      "medicaid": -4.0,
+      "self_pay": -3.0
+    },
+    "mix_weighted_control": 0.134,
+    "mix_weighted_effect_pp": -1.9,
+    "late_cancel": {
+      "control": 0.06,
+      "treatment": 0.075
+    },
+    "refill_late_cancel": {
+      "control": 0.25,
+      "treatment": 0.6
+    },
+    "beta_concentration": 1.3,
+    "unfilled_control": 17.9,
+    "unfilled_treatment": 14.500000000000002,
+    "unfilled_effect_pp": -3.4000000000000004,
+    "srm_bug": {
+      "clinic": "C17",
+      "from": "2025-04-07",
+      "to": "2025-04-15",
+      "dropped": "treatment assignment rows"
+    },
+    "duplicate_assignment_share": 0.007,
+    "reschedule_share": 0.012,
+    "null_delivery_share": 0.02,
+    "booked_after_scheduled_share": 0.005,
+    "cost": {
+      "per_message": 0.04,
+      "platform_per_year": 18000,
+      "margin_per_filled_slot": 160
+    }
+  },
+  "realized": {
+    "by_variant": {
+      "control": {
+        "no_show": 0.13762606050904433,
+        "late_cancel": 0.062149831919321274,
+        "unfilled": 0.18476868897070595,
+        "refill_late_cancel": 0.24146812620734062,
+        "n_appointments": 24988
+      },
+      "treatment": {
+        "no_show": 0.11065375302663438,
+        "late_cancel": 0.07663438256658596,
+        "unfilled": 0.14184826472962067,
+        "refill_late_cancel": 0.592943654555029,
+        "n_appointments": 24780
+      }
+    },
+    "effect_no_show_pp": -2.6972307482409947,
+    "effect_unfilled_pp": -4.292042424108527,
+    "effect_late_cancel_pp": 1.4484550647264685,
+    "by_payer": {
+      "commercial": {
+        "control": 0.09252779721639064,
+        "treatment": 0.07510036999134063,
+        "effect_pp": -1.742742722505
+      },
+      "medicare": {
+        "control": 0.12245317966659806,
+        "treatment": 0.10222222222222223,
+        "effect_pp": -2.0230957444375837
+      },
+      "medicaid": {
+        "control": 0.22966666666666666,
+        "treatment": 0.17357203751065645,
+        "effect_pp": -5.609462915601021
+      },
+      "self_pay": {
+        "control": 0.21766561514195584,
+        "treatment": 0.2091917591125198,
+        "effect_pp": -0.8473856029436039
+      }
+    },
+    "expected_effect_given_latent": {
+      "overall_pp": -1.9220581791061861,
+      "by_payer_pp": {
+        "commercial": -0.978250516322086,
+        "medicare": -1.5039766664404126,
+        "medicaid": -4.099128194592907,
+        "self_pay": -2.869696485588944
+      }
+    },
+    "rho_pre_vs_experiment": 0.5575696507799154,
+    "rho_n_patients": 25158,
+    "assigned_patients_true": {
+      "control": 15456,
+      "treatment": 15653
+    },
+    "srm_treatment_rows_dropped": 93,
+    "logged_split_treatment_share": 0.5016765540366263,
+    "duplicate_assignment_rows": 217,
+    "rescheduled_originals": 4487,
+    "rescheduled_miscoded_as_no_show": 2740,
+    "booked_after_scheduled_rows": 2154,
+    "rows": {
+      "dim_patient": 90000,
+      "dim_clinic": 24,
+      "dim_provider": 180,
+      "fact_appointment": 420134,
+      "fact_experiment_assignment": 31233,
+      "fact_message_log": 300313
+    }
+  }
+}

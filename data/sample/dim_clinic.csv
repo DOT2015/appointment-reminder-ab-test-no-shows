@@ -1,0 +1,25 @@
+clinic_id,clinic_name,specialty,region,timezone,has_waitlist
+C19,Clinic 19,orthopedics,North,America/New_York,false
+C11,Clinic 11,primary_care,South,America/New_York,true
+C12,Clinic 12,cardiology,West,America/Chicago,true
+C09,Clinic 09,dermatology,East,America/New_York,true
+C24,Clinic 24,cardiology,East,America/New_York,true
+C13,Clinic 13,orthopedics,North,America/New_York,true
+C21,Clinic 21,dermatology,West,America/Chicago,false
+C22,Clinic 22,ob_gyn,North,America/New_York,false
+C16,Clinic 16,ob_gyn,North,America/New_York,false
+C05,Clinic 05,primary_care,West,America/Chicago,true
+C20,Clinic 20,behavioral_health,South,America/New_York,true
+C17,Clinic 17,primary_care,South,America/New_York,true
+C06,Clinic 06,cardiology,East,America/New_York,false
+C10,Clinic 10,ob_gyn,North,America/New_York,true
+C23,Clinic 23,primary_care,South,America/New_York,true
+C04,Clinic 04,ob_gyn,North,America/New_York,true
+C08,Clinic 08,behavioral_health,South,America/New_York,false
+C01,Clinic 01,orthopedics,North,America/New_York,false
+C18,Clinic 18,cardiology,East,America/New_York,false
+C15,Clinic 15,dermatology,East,America/New_York,true
+C03,Clinic 03,dermatology,East,America/New_York,true
+C14,Clinic 14,behavioral_health,South,America/New_York,true
+C07,Clinic 07,orthopedics,North,America/New_York,false
+C02,Clinic 02,behavioral_health,South,America/New_York,true
